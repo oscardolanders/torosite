@@ -1,0 +1,204 @@
+ @import url('https://fonts.googleapis.com/css2?display=swap');
+ @import url('https://fonts.googleapis.com/css2? family=Oleo+Script&family=Oswald&display=swap');
+h1{
+    font-family: 'Oleo Script',cursif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+:root{
+    --body:#888;
+    --dark:#21252f;
+    --box-shadow: 0 8px 22px rgba(0,0,0.1);
+    --rede:#A81F23;
+    --danger:#A81F23;
+
+}
+body{
+    font-family: 'Oleo Script',cursif;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.7;
+   color:var(--body);
+
+}
+h1,h2,h3,h4,h5.display-4{
+color: var(--dark);
+font-weight: 700;
+ 
+}
+navbar{
+    box-shadow: var(--box-shadow);
+}
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+.hero{
+    background-image: url("B1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index:2;
+   
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:rgba(21,20,51,0.6);
+    z-index: -1;
+}
+.navbar.nav-link{
+    font-size: 14px;
+    font-weight: 700;
+}
+nav.logo{
+   width: 160px;
+
+}
+img{
+    width: 100%;
+
+}
+
+#bo{
+    border-radius: 3px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.section{
+   width: 100%;
+   padding-top: 120px;
+   padding-bottom: 120px;
+
+
+
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+
+}
+#al{
+font-family: Arial, Helvetica, sans-serif;
+}
+#ae{
+
+    font-family: 'Oleo Script',cursif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+  
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color:#fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+    border-radius: 20px;    
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.iconbox{
+    width: 54px;
+    height:54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: var(--rede);
+   color: #fff;
+   font-size: 32px;
+   border-radius: 100px;
+    flex: none;
+
+
+}
+.cm{
+    font-size: 18px;
+    
+}
+ .pa{
+     font-size: 12px;
+ }
+ .service{
+     position: relative;
+     z-index: 2;
+     overflow: hidden;
+ }
+
+ .service::after{
+     content: '';
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: var(--rede);
+     z-index: -1;
+     opacity: 0;
+     transition:all 0.9s ease;
+    
+ }
+ .service h5,p{
+     color:#888;
+ }
+ .service:hover.iconbox{
+     background-color: #fff;
+     color: var(--rede);
+
+ }
+ .service:hover h5,
+ .service:hover p{
+     color: #fff;
+ }
+ .service:hover::after{
+     opacity: 1;
+     top: 0;
+ }
+ .shoot{
+     color: var(--rede);
+ }
+ .container1{
+     margin-top: 40px;
+ }
+ .col-img{
+     background-image: url(tr5.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 50px;
+
+ }
+ .project{
+     position: relative;
+    overflow: hidden;
+   
+ }
+ .project.overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 30px;
+     display: flex;
+     align-items: flex-end;
+     transition: all 0.4s ease;
+      
+ }
+ .project img{
+    transition: all 0.4s ease;
+ }
+ .project:hover img{
+   transform: scale(1.1);
+background-color: black;
+ }
+  
